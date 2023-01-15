@@ -171,8 +171,6 @@ In short, the dictionary resulting from the loop will have the edges as keys (li
 
 * The network was created from the edge dictionary, in which the key represents the edge between two nodes (tuple) and the value represents the weight of the edge (absolute frequency)
 
-**Graph 1: GoT Network:**
-
 ![network](/graphs/network.png)
 
 * The nodes of the possible main characters were colored green. It can be seen that they are very central in the network and have several edges
@@ -224,8 +222,6 @@ In short, the dictionary resulting from the loop will have the edges as keys (li
 
 * Eigenvector Centrality is an algorithm that measures the transitive influence of nodes. Relationships originating from high-scoring nodes contribute more to the score of a node than connections from low-scoring nodes. A high eigenvector score means that a node is connected to many nodes who themselves have high scores.
 
-**Graph 2: Eigenvector Network:**
-
 ![eigenvector](/graphs/eigenvector.png)
 
 ![eigenvector_hist](/plots/eigenvector_hist.png)
@@ -251,8 +247,6 @@ In short, the dictionary resulting from the loop will have the edges as keys (li
 
 ```PageRank works by counting the number and quality of links to a page to determine a rough estimate of how important the website is. The underlying assumption is that more important websites are likely to receive more links from other websites```
 
-**Graph 3: PageRank Network:**
-
 ![pagerank](/graphs/pagerank.png)
 
 ![pagerank_hist](/plots/pagerank_hist.png)
@@ -267,8 +261,6 @@ In short, the dictionary resulting from the loop will have the edges as keys (li
 ### Closeness Centrality
 
 * Closeness centrality indicates how close a node is to all other nodes in the network. It is calculated as the average shortest distance from each vertex to each other vertex. Specifically, it is the inverse of the average shortest distance between the vertex and all other vertices in the network.
-
-**Graph 4: Closeness Network:**
 
 ![closeness](/graphs/closeness.png)
 
