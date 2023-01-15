@@ -102,6 +102,8 @@
 
 * If any of these conditions are true, the line is not considered a dialog.
 
+* Function:
+
         def IsDialog(text):
             pattern = r'^.{1,20}(?=\:)'
             dialog = re.match(pattern, text)
@@ -169,11 +171,15 @@ In short, the dictionary resulting from the loop will have the edges as keys (li
 
 * The network was created from the edge dictionary, in which the key represents the edge between two nodes (tuple) and the value represents the weight of the edge (absolute frequency)
 
+**Graph 1: GoT Network:**
+
 ![network](/graphs/network.png)
 
 * The nodes of the possible main characters were colored green. It can be seen that they are very central in the network and have several edges
 
         possible_main_characters = ['jon', 'tyrion', 'daenerys', 'jaime', 'cersei', 'sansa']
+
+**NOTE: The graphs can be difficult to visualize because it has many nodes and edges, you can download the images to zoom in or download the notebook to plot images in better resolution. It was necessary to reduce the quality of the images to make them more compact.**
 
 ## Centrality Measures
 
@@ -210,11 +216,19 @@ In short, the dictionary resulting from the loop will have the edges as keys (li
 
 * According to the degree centrality, we can define a group of 4 main characters that stand out from the others by the amount of connections. These characters are the ones who have more interaction with other characters during the plot.
 
+![degree_bar](/plots/degree_bar.png)
+
+![degree_hist](/plots/degree_hist.png)
+
 ### Eigenvector Centrality
 
 * Eigenvector Centrality is an algorithm that measures the transitive influence of nodes. Relationships originating from high-scoring nodes contribute more to the score of a node than connections from low-scoring nodes. A high eigenvector score means that a node is connected to many nodes who themselves have high scores.
 
+**Graph 2: Eigenvector Network:**
+
 ![eigenvector](/graphs/eigenvector.png)
+
+![eigenvector_hist](/plots/eigenvector_hist.png)
 
 * The purpose of eigenvector centrality is to measure the importance of a vertex as a function of the importance of its neighbors. This means that even if a vertex is connected to only a few other vertices in the network (thus having a low degree centrality), these neighbors can be important and, consequently, the vertex will also be important, obtaining a high eigenvector centrality.
 
@@ -237,7 +251,11 @@ In short, the dictionary resulting from the loop will have the edges as keys (li
 
 ```PageRank works by counting the number and quality of links to a page to determine a rough estimate of how important the website is. The underlying assumption is that more important websites are likely to receive more links from other websites```
 
+**Graph 3: PageRank Network:**
+
 ![pagerank](/graphs/pagerank.png)
+
+![pagerank_hist](/plots/pagerank_hist.png)
 
 * PageRank computes a ranking of the nodes in the graph G based on the structure of the incoming links. The ranking of the nodes calculated by PageRank showed the same top four results as the degree centrality, but in a different order.
 
@@ -250,7 +268,11 @@ In short, the dictionary resulting from the loop will have the edges as keys (li
 
 * Closeness centrality indicates how close a node is to all other nodes in the network. It is calculated as the average shortest distance from each vertex to each other vertex. Specifically, it is the inverse of the average shortest distance between the vertex and all other vertices in the network.
 
+**Graph 4: Closeness Network:**
+
 ![closeness](/graphs/closeness.png)
+
+![closeness_hist](/plots/closeness_hist.png)
 
 * Proximity centrality measures how central a node is, i.e. the more central a node is, the closer it is to all other nodes.
 
@@ -275,7 +297,9 @@ In short, the dictionary resulting from the loop will have the edges as keys (li
 
     * Closeness Centrality = Jon
 
-* Then, from the methods employed, it can be conclude that there is more than one main character, namely: Jon and Tyrion. However, by extending the ranks of the rankings it is possible to observe the following names frequently:
+* Then, from the methods employed, it can be conclude that there is more than one main character, namely: **Jon and Tyrion**.
+
+* However, by extending the ranks of the rankings it is possible to observe the following names frequently:
 
     * Jaime
     
@@ -294,4 +318,3 @@ In short, the dictionary resulting from the loop will have the edges as keys (li
     * Sansa
     
     * Daenerys
-![themes_avg1](/graphs/themes_avg1.png)
