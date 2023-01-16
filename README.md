@@ -216,9 +216,13 @@ In short, the dictionary resulting from the loop will have the edges as keys (li
 
 * According to the degree centrality, we can define a group of 4 main characters that stand out from the others by the amount of connections. These characters are the ones who have more interaction with other characters during the plot.
 
-![degree_bar](/plots/degree_bar.png)
+![degree_bar](/plots/degree_bar.png#gh-light-mode-only)
 
-![degree_hist](/plots/degree_hist.png)
+![degree_hist](/plots/degree_hist.png#gh-light-mode-only)
+
+![degree_bar_light](/plots/degree_bar_light.png#gh-dark-mode-only)
+
+![degree_hist_light](/plots/degree_hist_light.png#gh-dark-mode-only)
 
 ### Eigenvector Centrality
 
