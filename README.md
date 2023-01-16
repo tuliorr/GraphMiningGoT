@@ -218,17 +218,21 @@ In short, the dictionary resulting from the loop will have the edges as keys (li
 
 ![degree_hist](/plots/degree_hist.png#gh-light-mode-only)
 
-![degree_bar_light](/plots/degree_bar_light.png#gh-dark-mode-only)
+![degree_bar_dark](/plots/degree_bar_light.png#gh-dark-mode-only)
 
-![degree_hist_light](/plots/degree_hist_light.png#gh-dark-mode-only)
+![degree_hist_dark](/plots/degree_hist_light.png#gh-dark-mode-only)
 
 ### Eigenvector Centrality
 
 * Eigenvector Centrality is an algorithm that measures the transitive influence of nodes. Relationships originating from high-scoring nodes contribute more to the score of a node than connections from low-scoring nodes. A high eigenvector score means that a node is connected to many nodes who themselves have high scores.
 
-![eigenvector](/graphs/eigenvector.png)
+![eigenvector](/graphs/eigenvector.png#gh-light-mode-only)
 
-![eigenvector_hist](/plots/eigenvector_hist.png)
+![eigenvector_hist](/plots/eigenvector_hist.png#gh-light-mode-only)
+
+![eigenvector_dark](/graphs/eigenvector_light.png#gh-dark-mode-only)
+
+![eigenvector_hist_dark](/plots/eigenvector_hist_light.png#gh-dark-mode-only)
 
 * The purpose of eigenvector centrality is to measure the importance of a vertex as a function of the importance of its neighbors. This means that even if a vertex is connected to only a few other vertices in the network (thus having a low degree centrality), these neighbors can be important and, consequently, the vertex will also be important, obtaining a high eigenvector centrality.
 
@@ -251,9 +255,13 @@ In short, the dictionary resulting from the loop will have the edges as keys (li
 
 ```PageRank works by counting the number and quality of links to a page to determine a rough estimate of how important the website is. The underlying assumption is that more important websites are likely to receive more links from other websites```
 
-![pagerank](/graphs/pagerank.png)
+![pagerank](/graphs/pagerank.png#gh-light-mode-only)
 
-![pagerank_hist](/plots/pagerank_hist.png)
+![pagerank_hist](/plots/pagerank_hist.png#gh-light-mode-only)
+
+![pagerank_dark](/graphs/pagerank.png#gh-dark-mode-only)
+
+![pagerank_hist_dark](/plots/pagerank_hist.png#gh-dark-mode-only)
 
 * PageRank computes a ranking of the nodes in the graph G based on the structure of the incoming links. The ranking of the nodes calculated by PageRank showed the same top four results as the degree centrality, but in a different order.
 
@@ -266,9 +274,13 @@ In short, the dictionary resulting from the loop will have the edges as keys (li
 
 * Closeness centrality indicates how close a node is to all other nodes in the network. It is calculated as the average shortest distance from each vertex to each other vertex. Specifically, it is the inverse of the average shortest distance between the vertex and all other vertices in the network.
 
-![closeness](/graphs/closeness.png)
+![closeness](/graphs/closeness.png#gh-light-mode-only)
 
-![closeness_hist](/plots/closeness_hist.png)
+![closeness_hist](/plots/closeness_hist.png#gh-light-mode-only)
+
+![closeness_dark](/graphs/closeness.png#gh-dark-mode-only)
+
+![closeness_hist_dark](/plots/closeness_hist.png#gh-dark-mode-only)
 
 * Proximity centrality measures how central a node is, i.e. the more central a node is, the closer it is to all other nodes.
 
